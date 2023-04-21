@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  /* height: 95vh; */
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #14121c;
+  color: white;
+  padding: 40px 10%;
+  width: 80%;
+  gap: 2em;
+}
+
+h1,
+p {
+  color: white;
+  font-family: "Roboto Mono";
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin-top: 70px;
+  }
+}

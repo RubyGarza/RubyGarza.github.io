@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  height: 95vh;
+}
+
+main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 60%;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.left > * {
+  margin-left: 7%;
+}
+
+main .left h1 {
+  font-size: 36px;
+  color: #110f0b;
+}
+
+.secondary_button {
+  width: 150px;
+}
+
+.left p {
+  color: #474747;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.right {
+  width: 40%;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+}
+
+.stats {
+  background-color: #262626;
+  width: calc(100% - 140px);
+  margin: 0;
+  color: white;
+  padding: 50px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.stats div > button {
+  width: 200px !important;
+}
+
+.stats h1,
+h2 {
+  color: white !important;
+}
+
+.right > div {
+  position: absolute;
+  bottom: 5%;
+  padding: 10px 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right > div > div {
+  background-color: #262626;
+  border-radius: 10px;
+}
+
+.right > div > div > img {
+  height: 20px;
+  width: 40px;
+  padding: 15px 25px;
+}
+
+@media screen and (max-width: 1500px) {
+  .left {
+    width: 50% !important;
+  }
+
+  .right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .left {
+    width: 100% !important;
+  }
+
+  .right {
+    width: 100%;
+  }
+  main {
+    display: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left > * {
+    margin-left: 3%;
+  }
+
+  .left > div {
+    flex-direction: column;
+    gap: 2em !important;
+  }
+
+  .stats {
+    margin: 0%;
+  }
+
+  .stats > div {
+    align-items: center;
+  }
+}
