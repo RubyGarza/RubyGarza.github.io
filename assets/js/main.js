@@ -56,3 +56,15 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+setTimeout(() => {
+  $("#init_text").fadeOut(1000, function () {
+    $(this).remove();
+  });
+
+  $("#picture_collage").fadeIn(1000, () => {
+    $(this).show();
+  });
+}, 45 * 1000);
+
+$("#picture_collage").hide();

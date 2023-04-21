@@ -22,3 +22,17 @@ span {
   color: #4fc3f7;
   text-decoration: none;
 }
+
+.picture_collage {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.picture_collage > img {
+  width: 100%;
+}
