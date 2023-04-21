@@ -65,6 +65,6 @@ setTimeout(() => {
   $("#picture_collage").fadeIn(1000, () => {
     $(this).show();
   });
-}, 45 * 1000);
+}, 65 * 1000);
 
 $("#picture_collage").hide();
